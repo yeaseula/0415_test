@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        * {box-sizing: border-box; text-decoration: none;}
+        ul,li,ol {list-style:none; margin:0; padding:0; }
+
+    /*헤더*/    
+        header {width: 1260px; height: 103px; margin:0 auto;}
+        #logo {width:186px; height:71px; background-color: blueviolet; float: left; margin: 14px 0 0 30px; }
+        #logo img {width: 100%; height: 100%;}
+
+        #login {width:360px; height:71px; float: right; margin: 18px 10px 0 0px;}
+        #login > .icon {width: 30px; height: 30px; float:right; display:inline-block; margin: 15px 0 0 40px; }
+        #login > .icon > a > img {width: 100%; height: 100%;}
+
+        .nav1 {width:450px; height:71px; float: left; margin: 18px 0 0 10px;}
+        .nav1 > ul {font-size: 20px; }
+        .nav1 > ul > li > a {float:left; margin:17px 0 0 33px; color:#333; font-weight: 700;}
+        .nav1 > ul > li > a:hover {color:orangered; }
+
+        .nav2 {width:1260px; height:47px; margin: 0 auto ;}
+        .nav2 > ul {font-size: 16px; margin: 0 0 0 40px;}
+        .nav2 > ul > li > a {float:left; margin: 8px 40px 8px 0px; color:#333; font-weight: 700;}
+        .nav2 > ul > li > a:hover {color:orangered; }
+
+    /*슬라이더*/
+        #slider {width:100%; height: 600px; margin: 33px 0 80px 0px;}
+        #slider img {width: 100%; height: 100%;}
+       
+        
+
+    /*섹션-베스트 프로덕트*/    
+
+    /*인기검색어 베스트*/
+
+        .best {width:1260px; height:365px; margin:0 auto;}
+        .best > .best-products1 {width:240px; height: 330px; display:inline-block; }
+        .best-products1 > ul {float: left;}
+        .best-products1 > ul > li {font-size: 25px; margin: 5px 0 20px -20px; font-weight: 600;}
+        
+        .best-products1 > ul > li > a {font-size: 18px; color: dimgray; margin: 20px 0 0 5px;}     
+        .best-products1 > ul > li >a:hover {color:black; }
+
+    /*이미지 박스*/
+
+        .best > .best-products {width:285px; height: 330px; display:inline-block; border:1px solid gray; box-shadow: 2px 2px 2px ghostwhite;}
+        .best-products > a > img {width: 85%; height: 260px; float: left;  margin: 5px 20px; opacity: 1;}
+        .best-products > a > img:hover {opacity: 0.7;}
+
+        .best-products > p > a {font-size: 12px; float: left; width:180px; text-align: center; margin: 10px 55px; color: black;}
+
+        .best div:first-of-type {margin: 13px 0 0 35px; }
+        .best div:nth-of-type(2) {margin: 13px 0 0 26px; }
+        .best div:nth-of-type(3) {margin: 13px 0 0 26px; }
+        .best div:last-of-type {margin: 13px 0 0 26px; }
+
+
+    /*리뷰 인스타그램*/
+
+        .sns {width: 1260px; height: 420px; margin: 0 auto;}
+
+        .sns h5 {font-size: 28px; margin: 20px;}
+
+        .instargram {width:1260px; height:335px; margin: 0 auto; }
+        
+        .instargram > .box {width: 210px; height: 280px; display: inline-block; text-align:center;}
+        .instargram > .box > p > a {font-size: 12px; color: #333;}
+        .instargram > .box > p > a:hover {font-weight:900;}
+        .instargram > .box > a > img {width: 200px; height: 200px; margin: 0 5px 0 5px; opacity: 1;}
+        .instargram > .box > a > img:hover {opacity: 0.7;}
+
+
+        .instargram div:first-of-type {margin: 20px 0 0 85px;}
+        .instargram div:nth-of-type(2) {margin: 20px 0 0 6px;}
+        .instargram div:nth-of-type(3) {margin: 20px 0 0 6px;}
+        .instargram div:nth-of-type(4) {margin: 20px 0 0 6px;}
+        .instargram div:last-of-type {margin:  20px 0 0 6px;}
+
+
+    
+
+
+        
+/*섹션-프로덕트1 화이트*/
+
+        .product1 {width:1260px; height:410px; margin:0 auto;}
+        .product1 .a {width:280px; height: 330px; display:inline-block; text-align: center;}
+        .product1 .a  a img {width: 270px; height: 260px; float: left; margin: 0 5px 0 5px; opacity: 1;}
+        .product1 .a  a img:hover {opacity: 0.7;} 
+
+        .product1 h5 { font-size: 28px; margin: 20px;}
+        .product1 p a {font-size: 13px; color:black; }
+
+        .product1 div:first-of-type {margin: 0 0 0 35px; }
+        .product1 div:nth-of-type(2) {margin: 0  0 0 18px; }
+        .product1 div:nth-of-type(3) {margin: 0  0 0 18px; }
+        .product1 div:last-of-type {margin: 0 0 0 18px; }
+
+/*섹션-프로덕트2*/
+
+        .product2 {width:1260px; height:405px; margin:0 auto;}
+        .product2 .b {width:280px; height: 330px; display:inline-block; text-align: center;}
+        .product2 .b a img {width: 270px; height: 260px; float: left; margin: 0 5px 0 5px; opacity: 1;}
+        .product2 .b a img:hover {opacity: 0.7;}
+
+        .product2 h5 {font-size: 28px; margin: 20px;}
+        .product2 p a {font-size: 13px; color:black; }
+
+        .product2 div:first-of-type {margin: 0 0 0 35px; }
+        .product2 div:nth-of-type(2) {margin: 0 0 0 18px; }
+        .product2 div:nth-of-type(3) {margin: 0 0 0 18px; }
+        .product2 div:last-of-type {margin: 0 0 0 18px; }
+
+        /*섹션 프로덕트3*/
+
+        .product3 {width:1260px; height:405px; margin:0 auto;}
+        .product3 .c {width:280px; height: 330px; display:inline-block; text-align: center;}
+        .product3 .c a img {width: 270px; height: 260px; float: left; margin: 0 5px 0 5px; opacity: 1;}
+        .product3 .c a img:hover {opacity: 0.7;}
+
+        .product3 h5 {font-size: 28px; margin: 20px; }
+        .product3 p a {font-size: 13px; color:black; }
+
+        .product3 div:first-of-type {margin: 0px 0 0 35px; }
+        .product3 div:nth-of-type(2) {margin: 0px 0 0 18px; }
+        .product3 div:nth-of-type(3) {margin: 0px 0 0 18px; }
+        .product3 div:last-of-type {margin: 0px 0 0 18px; }
+
+
+
+        /*섹션 비디오*/
+
+        .video {width:1260px; height:400px; background-color:wheat; margin:50px auto;}
+        
+        .video .text {width: 380px; height: 350px; float:left; display: inline-block; margin: 30px 0 0 160px;}
+
+        .video .text a img {width: 380px; height: 350px; opacity: 1;}
+        .video .text a img:hover {opacity: 0.7;}
+
+
+        .video .text h4 {color:#333 font-size: 15px; margin:40px 0 0 10px;}
+        .video .text h1 {font-size: 30px; margin: 0 0 0 0px;}
+        .video .text p {font-size: 14px; margin: 20px 0 0 0px;}
+        .video .text .bt {border:none; margin: 40px 0 0 0px; padding: 10px; border-radius: 10px; background-color: chocolate; cursor:pointer; opacity: 1;}
+        .video .text .bt:hover {opacity: 0.5;}
+        
+
+
+    /*하단*/
+
+        footer {width: 100%; height: 200px; }
+        footer .box {width:1020px; height: 180px; margin: 0 auto;}
+        footer .box ul {font-size: 11px; color: #666; width: 990px; height: 33px; padding: 100px 0 0 30px;}
+        footer .box ul li {float: left; margin: 0 0 0 10px;}
+        footer .box p {font-size: 11px; width: 990px; height: 70px; padding: 30px 0 0 30px; float: left;}
+
+
+    
+
+
+        
+
+
+ 
+    </style>
+
+</head>
+
+
+
+<body>
+
+<!----헤더-----> 
+    
+    <header>
+        <div id="logo">
+            <img src="img/logo.JPG" alt="logo">
+
+        </div>
+
+        <div class="nav1">
+            <ul>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">타임특가</a></li>
+                <li><a href="#">핫딜</a></li>
+                <li><a href="#">리퍼세일</a></li>
+            </ul>
+
+        </div>
+
+        <div id="login">
+            <div class="icon">
+                <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/business-finance-healthcare-and-science/64/buy-cart-e-commerce-empty-shopping-128.png"alt="장바구니"></a>
+
+            </div>
+            <div class="icon">
+                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/cosmetology-set/52/cosmetology-02-128.png" alt="로그인"></a>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/ikooni-generic-symbols/128/maybe-50-128.png" alt="돋보기"></a>
+            </div>
+        </div>
+        
+    </header>
+     <hr>
+     <div class="nav2">
+        <ul>
+            <li><a href="#">침실</a></li>
+            <li><a href="#">매트리스</a></li>
+            <li><a href="#">거실</a></li>
+            <li><a href="#">주방</a></li>
+            <li><a href="#">서재</a></li>
+            <li><a href="#">수납</a></li>
+            <li><a href="#">의자</a></li>
+            <li><a href="#">홈데코</a></li>
+            <li><a href="#">생활용품</a></li>
+        </ul>
+
+
+     </div>
+     <hr>
+
+     <!--슬라이더-->
+
+    <div id="slider">
+        <img src="img/slider.JPG" alt="slider">
+    </div>
+    
+
+
+
+     <!--섹션 베스트상품소개-->
+
+    <section class="best">
+
+        <div class="best-products1">
+            <ul>
+                <li>인기검색어 베스트</li>
+                <li><a href="#">거실장</a></li>
+                <li><a href="#">매트리스</a></li>
+                <li><a href="#">콘솔</a></li>
+                <li><a href="#">테이블</a></li>
+                <li><a href="#">조명</a></li>
+
+            </ul>
+            
+        </div>
+
+        <div class="best-products">
+            <a href="#"><img src="img/best2.JPG" alt="best2"></a>
+            <p><a href="#">티비다이 높은 거실장<br>[5일이내 배송][리뷰이벤트]</a></p>
+
+        </div>
+
+        <div class="best-products">
+            <a href="#"><img src="img/best1.JPG" alt="best1"></a>
+            <p><a href="#">클린 모던 거실장<br>[5% 할인쿠폰]</a></p>
+
+
+        </div>
+
+        <div class="best-products">
+            <a href="#"><img src="img/best3.JPG" alt="best3"></a>
+            <p><a href="#">프로방스 마지올리니 거실장<br>[5일이내 배송]</a></p>
+
+        </div>
+            
+ 
+
+    </section>
+
+    <br>
+    <hr>
+
+<!---리뷰 인스타그램-->
+
+
+    <section class="sns">
+
+        <h5>BEST REVIEW</h5>
+
+        
+
+        <div class="instargram">
+            <div class="box">
+                <a href="#"><img src="img/review1.JPG" alt="review1"></a>
+                <p><a href="#">[ID:dkfn***] 거실에 놓을만한<br>원목 테이블을 찾고있었는데<br>보는 사람마다 너무 예쁘..</a></p>
+            </div>
+            <div class="box">
+                <a href="#"><img src="img/review2.JPG" alt="review2"></a>
+                <p><a href="#">[ID:un443***] 깔끔한 화이트에 <br>원목의 따스함을 원했는데<br>딱 필요..</a></p>
+            </div>
+            <div class="box">
+                <a href="#"><img src="img/review3.JPG" alt="review3"></a>
+                <p><a href="#">[ID:mini***]역시 올화이트가<br>사진이 잘 나오네요<br>배송도 빠르..</a></p>
+
+            </div>
+            <div class="box">
+                <a href="#"><img src="img/review4.JPG" alt="review4"></a>
+                <p><a href="#">[ID:k88***]가격도 적당하고 <br>생각보다 너무 예뻐요<br>인스타에 올..</a></p>
+            </div>
+
+            <div class="box">
+                <a href="#"><img src="img/review5.JPG" alt="review5"></a>
+                <p><a href="#">[ID:tlws***]배송이 너무 빨랐어요<br>배송기사님도 친절하고<br>좋은 물건..</a></p>
+                
+            </div>  
+
+
+
+             
+        
+
+        </div>
+
+    </section>
+
+
+    <!--텍스트 문구/ 컬러별로 나뉨 명시-->
+
+
+
+
+    <!--섹션 컬러별로 나뉘는 상품들 소개-->
+    <!--섹션 프로덕트1 화이트-->
+
+
+    <section class="product1">
+
+        <h5>WHITE</h5>
+        <div class="a">
+            <a href="#"><img src="img/white1.JPG" alt="white1"></a>
+            <p><a href="#">[white]60수코튼 프릴 베게커버<br>[1+1특가이벤트]<br><b>22800원</b></a></p>
+            
+        </div>
+
+        <div class="a">
+            <a href="#"><img src="img/white2.JPG" alt="white2"></a>
+            <p><a href="#">[white]챠르르 쉬폰 암막 커튼<br>비침없는 원단<br><b>39800원</b></a></p>
+        </div>
+
+        <div class="a">
+            <a href="#"><img src="img/white3.JPG" alt="white3"></a>
+            <p><a href="#">[white]화이트원목 거실장<br>2년연속 best 상품!<br><b>79800원</b></a></p>
+        </div>
+
+        <div class="a">
+            <a href="#"><img src="img/white4.JPG" alt="white4"></a>
+            <p><a href="#">[white]1인용 테이블+의자 set<br>[5월 예약배송]<br><b>138000원</b></a></p>
+            
+        </div>
+
+
+
+    </section>
+
+    <!--섹션 프로덕트2 마지올리니-->
+
+    <section class="product2">
+
+        <h5>MAGGIOLONI</h5>
+
+        <div class="b">
+            <a href="#"><img src="img/Maggiolini1.JPG" alt="Maggiolini1"></a>
+            <p><a href="#">[Maggiolini]주방 수납서랍세트<br>[4월말 예약배송]<br><b>219000원</b></a></p>
+        </div>
+        <div class="b">
+            <a href="#"><img src="img/Maggiolini2.JPG" alt="Maggiolini2"></a>
+            <p><a href="#">[Maggiolini]거실 다용도 수납장<br>[봄 한정세일]<br><b>145000원</b></a></p>
+        </div>
+        <div class="b">
+            <a href="#"><img src="img/Maggiolini3.JPG" alt="Maggiolini3"></a>
+            <p><a href="#">[Maggiolini]1단 옷장<br>옵션 주문제작 가능 상품<br><b>228000원</b></a></p>
+        </div>
+        <div class="b">
+            <a href="#"><img src="img/Maggiolini4.JPG" alt="Maggiolini4"></a>
+            <p><a href="#">[Maggiolini]빈티지 거실장<br>주방,거실용 제품<br><b>159000원</b></a></p>
+        </div>
+
+
+    </section>
+
+    <!--섹션 프로덕트3 로이든-->
+
+    <section class="product3">
+
+        <h5>LOYDN RETRO</h5>
+
+        <div class="c">
+            <a href="#"><img src="img/Loidn1.JPG" alt="Loidn1"></a>
+            <p><a href="#">[Loidn retro]원목 잠솔솔 침대 프레임<br>모던한 디자인<br><b>580000원</b></a></p>
+        </div>
+        <div class="c">
+            <a href="#"><img src="img/Loidn2.JPG" alt="Loidn2"></a>
+            <p><a href="#">[Loidn retro]원목 4단 서랍장<br>[반짝배송상품]<br><b>658000원</b></a></p>
+        </div>
+        <div class="c">
+            <a href="#"><img src="img/Loidn3.JPG" alt="Loidn3"></a>
+            <p><a href="#">[Loidn retro]원목테이블/소파테이블<br>고무나무 원목<br><b>289000원</b></a></p>
+        </div>
+        <div class="c">
+            <a href="#"><img src="img/Loidn4.JPG" alt="Loidn4"></a>
+            <p><a href="#">[Loidn retro]블랙프레임 원목 식탁의자<br>고무나무 원목<br><b>236000원</b></a></p>
+        </div>
+
+    </section>
+
+
+    <!---섹션 비디오와 텍스트 소개 구간-->
+
+    <section class="video">
+        
+        <div class="text">
+            <h4>#심플 #모던 #빈티지 #감성</h4>
+            
+            <h1>공간에 감각을 더하여</h1>
+            <br>
+            <p>트렌디하고 현대적인 인테리어로<br>지친 일상에 활력을 불어넣어보세요!</p>
+
+            <button class="bt">인테리어 구경하기</button>
+            
+        </div>
+        <div class="text">
+            <a href="#"><img src="img/bottom.JPG" alt="bottom"></a>
+
+        </div>
+
+
+    </section>
+
+    
+    <!--하단-->
+    <br>
+    <hr>
+
+    <footer>
+        <div class="box">
+            <ul>
+                <li>대표자 : 홍민구</li>
+                <li>사업자 등록번호 : 314-86-39655</li>
+                <li> 통신판매업 신고번호 : 제2012-대전서구-0537호 [사업자정보확인]</li>
+                <li>주소 : 대전광역시 서구 계백로 1159 (가수원동) 바네스데코빌딩</li>
+                <li>물류센터 : 충청남도 논산시 연무읍 마봉로 69-1</li>
+                <li>고객센터 : 1599-4960</li>
+                <li> FAX : 042-581-5560</li>
+                <li>바네스데코(hi@vanessdeco.com)</li>
+
+            </ul>
+            <p>(주)브이디코랩은 관세법등 관련규정을 준수하고 불법물품을 취급하지 아니하며 분할배송에 의한 가격허위신고(15만원이하로 임의조정)등 구매자의 불법사항 요청에는 협조하지 않습니다.</p>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
